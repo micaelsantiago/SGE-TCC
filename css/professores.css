@@ -1,0 +1,25 @@
+.quadroProfessores {
+    margin: 4% auto;
+}
+
+.tabela {
+    background-color: #FFF;
+    width: 60vw;
+    padding: 30px;
+    text-align: center;
+}
+.quadroProfessores h2 {
+    margin-bottom: 20px;
+}
+
+.tabelaCabecalho tr th{
+    padding-bottom: 30px;
+}
+
+.tabelaDados td {
+    padding: 10px 0;
+}
+
+.tabelaDados tr:nth-child(2) {
+    background-color: #EEE;
+}

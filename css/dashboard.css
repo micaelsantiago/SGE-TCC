@@ -1,0 +1,173 @@
+/* DASHBOARD */
+.dashboard {
+    margin: 4% auto;
+}
+
+.dashboard-cards {
+    display: flex;
+    gap: 30px;
+    padding: 30px 0;
+}
+
+.cards-turmas, 
+.cards-alunos, 
+.cards-materias, 
+.cards-professores {
+    width: 250px;
+    height: 100px;
+    padding: 20px;
+    color: #FFF;
+    border-radius: 12px;
+    cursor: pointer;
+    
+}
+
+.cards-turmas {
+    background-color: #344FD8;
+}
+
+.cards-alunos {
+    background-color: #00A85A;
+}
+
+.cards-materias {
+    background-color: #e9d041;
+}
+
+.cards-professores {
+    background-color: #EC3237;
+}
+
+
+.dashboard-cards h3 {
+    margin-bottom: 20px;
+}
+
+.dashboard-cards p {
+    text-align: right;
+    font-size: 20px;
+}
+
+.cards-turmas:hover, 
+.cards-alunos:hover, 
+.cards-materias:hover, 
+.cards-professores:hover {
+    transition: 0.6s;
+}
+
+.cards-turmas:hover {
+    background-color: #EEE;
+    color: #344FD8;
+    border: 1px solid #344FD8;
+}
+
+.cards-alunos:hover {
+    background-color: #EEE;
+    color: #00A85A;
+    border: 1px solid #00A85A;
+}
+
+.cards-materias:hover {
+    background-color: #EEE;
+    color: #e9d041;
+    border: 1px solid #e9d041;
+}
+
+.cards-professores:hover {
+    background-color: #EEE;
+    color: #EC3237;
+    border: 1px solid #EC3237;
+}
+
+
+/* QUADRO DE ORGANIZAÇÃO */
+.quadro-organizacao {
+    width: 100%;
+    border: 2px solid #C4C4C4;
+    border-radius: 6px;
+}
+
+.quadro-organizacao h3 {
+    padding: 20px;
+}
+
+.input-tarefa {
+    background-color: #344FD8;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+.input-tarefa:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.input-tarefa input {
+  margin: 0;
+  border: none;
+  border-radius: 12px;
+  width: 100%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+
+.todo__list {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    
+}
+
+.todo__item{
+    display: flex;
+    width: 100%;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    border: none;
+}
+.todo__item > div {
+    width: 85%;
+}
+
+.todo__item:hover {
+    cursor: pointer;
+    transition: all .5s ease;
+    background-color: #344FD8;
+    color: #fff;
+}
+
+.todo__item > input[type='checkbox'] {
+    margin-left: 10px;
+    margin-right: 10px;
+    accent-color: #00A85A;
+}
+
+.todo__item > input[type='button'] {
+    margin-right: 10px;
+    background-color: #EC3237;
+    cursor: pointer;
+    color: #fff;
+}
+
+.todo__item > input[type='button'],
+.todo__item > input[type='checkbox'] {
+    width: 30px;
+    height: 30px;
+    font: inherit;
+    border: 1px solid #ccc;
+    border-radius: 8px;    
+}
+
+.todo__item > input[type='checkbox']:checked + div {
+    text-decoration:line-through;
+}
+
+.todo__new-item > input::placeholder {
+    font-style: italic;
+    font-weight: normal;
+}

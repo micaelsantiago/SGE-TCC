@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/login.css">
+    <title>SGE | Sistema de Gerenciamento Escolar</title>
+</head>
+<body>
+    <main class="login-main">
+        <div class="left-login">
+            <img src="assets/images/logo-ete.png" alt="" class="image">
+            <h1>Sistema de Gerenciamento Escolar | SGE</h1>
+        </div>
+        
+        <div class="right-login">
+            <form action="php/login.php" method="POST" class="card">
+                <h2>Login</h2>
+                <div class="textfield">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required placeholder="Email">
+                </div>
+                <div class="textfield">
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" id="senha" required placeholder="Senha">
+                </div>
+
+                <button type="submit" class="btn">Entrar</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
